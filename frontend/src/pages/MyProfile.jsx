@@ -77,7 +77,7 @@ const MyProfile = () => {
           }
           <p className='font-medium'>Address:</p>
           {
-            isEdit ? <input className='bg-gray-50' type="text" value={userData.address} onChange={e => setUserData(prev => ({ ...prev, address: e.target.value }))} /> : <p className='text-gray-500'>{userData.address.line1}</p>
+            isEdit ? <input className='bg-gray-50' type="text" value={userData.address} onChange={e => setUserData(prev => ({ ...prev, address: e.target.value }))} /> : <p className='text-gray-500'>{userData.address}</p>
           }
         </div>
       </div>
