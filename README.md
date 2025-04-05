@@ -14,3 +14,6 @@ Backend: Node.js, Express.js
 Database: MongoDB
 Authentication: JWT (JSON Web Token)
 Multilingual Support: Google Translate API
+
+
+admin URL: https://medly-admin.vercel.app/
