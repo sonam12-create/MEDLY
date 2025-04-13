@@ -4,7 +4,6 @@ Features
 * User authentication (Sign up/Login)
 * Book and manage doctor appointments
 * Doctor dashboard for managing appointments
-* Multilingual support using Google Translate API
 * Real-time notifications
 * Secure database storage with MongoDB
 
@@ -13,7 +12,6 @@ Frontend: React.js, Tailwind CSS
 Backend: Node.js, Express.js
 Database: MongoDB
 Authentication: JWT (JSON Web Token)
-Multilingual Support: Google Translate API
 
 
 admin URL: https://medly-admin.vercel.app/
