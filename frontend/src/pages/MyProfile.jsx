@@ -14,6 +14,11 @@ const MyProfile = () => {
   const updateUserProfileData = async () => {
 
      try {
+
+      if (userData.phone.length !== 10) {
+        toast.error('Phone number must be exactly 10 digits.');
+        return;
+      }
       
       const formData = new FormData()
 
@@ -97,7 +102,7 @@ const MyProfile = () => {
           <p className='font-medium'>Date of Birth:</p>
           {
             isEdit ?
-              <input className='bg-gray-100 max-w-28' type="date" value={userData.dob} onChange={e => setUserData(prev => ({ ...prev, dob: e.target.value }))} />
+              <input className='bg-gray-100 max-w-28' type="date" max={new Date().toISOString().split("T")[0]} value={userData.dob} onChange={e => setUserData(prev => ({ ...prev, dob: e.target.value }))} />
               : <p className='text-gray-600'>{userData.dob}</p>
           }
         </div>
